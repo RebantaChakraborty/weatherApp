@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  flex-wrap: wrap;
+  background-image: linear-gradient(100deg, #9796f0, #fbc7d4);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2em;
+}
+.location,
+.temperature,
+.param {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 30vh;
+  /* margin: auto;  */
+  /* flex-basis: 4%; */
+}
+
+.temperature {
+  flex-direction: column;
+  /* justify-content:space-between; */
+  height: 35vh;
+}
+/* .temperature h1,h2,span{
+      margin: 2.5rem;
+      
+  } */
+
+.header {
+  /* font-family: "Niconne", cursive; */
+  position: absolute;
+  left: 2%;
+  top: 2%;
+}
+.degree-section {
+  display: flex;
+  align-items: center;
+  /* border: solid 2px red; */
+  justify-content: center;
+  cursor: pointer;
+  font-size: 3rem;
+}
+.degree-section span {
+  margin: 5px;
+}
+.cityName {
+  margin: 5% 0;
+}
+.cityName input {
+  width: 200%;
+  display: block;
+}
+@media screen and (max-width: 550px) {
+  .location {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 30vh;
+    flex-direction: column;
+  }
+}
+.param input {
+  border-top: hidden;
+  border-left: hidden;
+  border-right: hidden;
+  border-bottom-style: groove;
+  background-color: transparent;
+  width: 50%;
+  overflow: hidden;
+  font-size: 1.5rem;
+}
+.param input:focus {
+  outline: none;
+}
+.btn {
+  width: 10rem;
+}
